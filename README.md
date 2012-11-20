@@ -10,7 +10,7 @@ Installation
 1. Download google closure compiler jar. https://developers.google.com/closure/compiler/
 2. Edit the path to compiler.jar within compile-js.
 3. Make the compile-js.sh executable with chmod 755 compile.js
-4. Edit .profile within terminal and add an alias to compile-js.sh e.g. alias compile-js="~/Sites/git/github/compile-js/compile-js.sh"
+4. Edit ~/.profile within terminal and add an alias to compile-js.sh e.g. alias compile-js="~/Sites/git/github/compile-js/compile-js.sh"
 
 Usage
 ==========
