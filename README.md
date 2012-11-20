@@ -2,7 +2,7 @@ compile-js
 ==========
 
 Bash script wrapper for google closure compiler. Allows for JS files listed in a manifest or wildcard directory to be combined and compiled. 
-Using a manifest file is recommended to avoid javascript order dependency issues.
+By using a manifest file you can specify the order in which the files will be combined, therefore avoiding javascript dependency issues.
 Supports file modified time checking and only compiles if the source files are newer then the build files.
 
 
