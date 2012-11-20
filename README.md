@@ -1,7 +1,8 @@
 compile-js
 ==========
 
-Bash script wrapper for google closure compiler. Allows for JS files listed in a manifest or wildcard directory to be combined and compiled.
+Bash script wrapper for google closure compiler. Allows for JS files listed in a manifest or wildcard directory to be combined and compiled. 
+Using a manifest file is recommended to avoid javascript order dependency issues.
 Supports file modified time checking and only compiles if the source files are newer then the build files.
 
 
@@ -18,28 +19,19 @@ Usage
 compile-js [command] [output file] [input file(s)]
 
 Wildcard compile all js files within a directory.
-
-* cd my_js_src; compile-js build ../my_src_build/myapp.min.js
-* or
 * compile-js build /path/my_src_build/myapp.min.js /path/to/my_src/
 
-Create a manifest list of js files
+Compile multiple js files
+* compile-js build /path/my_src_build/myapp.min.js /path/to/my_src/myfile1.js /path/to/my_src/myfile2.js /path/to/my_src/myfile2.js
 
-* cd my_js_src; compile-js list manifest.txt
-* or
-* compile-js list manifest.txt /path/to/my_src/
+Create a manifest list of js files
+* compile-js list /path/to/my_src/manifest.txt /path/to/my_src/
 
 Compile js using a manifest file
-
-* cd my_js_src; compile-js build ../my_src_build/myapp.min.js manifest.txt
-* or
-* compile-js build /path/my_src_build/myapp.min.js /path/to/my_src/manifest.txt
+* compile-js build /path/to/my_src_build/myapp.min.js /path/to/my_src/manifest.txt
 
 Force re-compile js and ignore modified time
-
-* cd my_js_src; compile-js rebuild ../my_src_build/myapp.min.js manifest.txt
-* or
-* compile-js rebuild /path/my_src_build/myapp.min.js /path/to/my_src/manifest.txt
+* compile-js rebuild /path/to/my_src_build/myapp.min.js /path/to/my_src/manifest.txt
 
 
 
