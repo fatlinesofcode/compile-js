@@ -22,7 +22,7 @@ Wildcard compile all js files within a directory.
 * compile-js build /path/my_src_build/myapp.min.js /path/to/my_src/
 
 Compile multiple js files
-* compile-js build /path/my_src_build/myapp.min.js /path/to/my_src/myfile1.js /path/to/my_src/myfile2.js /path/to/my_src/myfile2.js
+* compile-js build /path/my_src_build/myapp.min.js /path/to/my_src/myfile1.js /path/to/my_src/myfile2.js /path/to/my_src/myfile3.js
 
 Create a manifest list of js files
 * compile-js list /path/to/my_src/manifest.txt /path/to/my_src/
