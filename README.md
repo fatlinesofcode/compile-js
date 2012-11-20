@@ -1,8 +1,8 @@
 compile-js
 ==========
 
-Bash script wrapper for google closure compiler. Allows for JS files listed in manifest or wildcard directory to be combined and compiled.
-Support file modified time checking and only compiles if the source files are newer then the build files.
+Bash script wrapper for google closure compiler. Allows for JS files listed in a manifest or wildcard directory to be combined and compiled.
+Supports file modified time checking and only compiles if the source files are newer then the build files.
 
 
 Installation
