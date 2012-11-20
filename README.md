@@ -18,9 +18,9 @@ compile-js [command] [output file] [input file(s)]
 
 Wildcard compile all js files within a directory.
 
-. cd my_js_src; compile-js build ../my_src_build/myapp.min.js
-. or
-. compile-js build /path/my_src_build/myapp.min.js /path/to/my_src/
+* cd my_js_src; compile-js build ../my_src_build/myapp.min.js
+* or
+* compile-js build /path/my_src_build/myapp.min.js /path/to/my_src/
 
 Create a manifest list of js files
 
