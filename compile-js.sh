@@ -51,6 +51,11 @@ done
 if test -z "$files"
 then
     files=`cat $3`
+    if test $3 -nt $output
+    then
+    echo $3' is newer then '$output
+    stale=true
+    fi
 fi
 
 
