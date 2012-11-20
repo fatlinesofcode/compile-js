@@ -30,15 +30,15 @@ Create a manifest list of js files
 
 Compile js using a manifest file
 
-*cd my_js_src; compile-js build ../my_src_build/myapp.min.js manifest.txt
-*or
-*compile-js build /path/my_src_build/myapp.min.js /path/to/my_src/manifest.txt
+* cd my_js_src; compile-js build ../my_src_build/myapp.min.js manifest.txt
+* or
+* compile-js build /path/my_src_build/myapp.min.js /path/to/my_src/manifest.txt
 
 Force re-compile js and ignore modified time
 
-*cd my_js_src; compile-js rebuild ../my_src_build/myapp.min.js manifest.txt
-*or
-*compile-js rebuild /path/my_src_build/myapp.min.js /path/to/my_src/manifest.txt
+* cd my_js_src; compile-js rebuild ../my_src_build/myapp.min.js manifest.txt
+* or
+* compile-js rebuild /path/my_src_build/myapp.min.js /path/to/my_src/manifest.txt
 
 
 
