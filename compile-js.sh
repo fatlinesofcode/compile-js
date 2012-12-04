@@ -42,8 +42,9 @@ if [ "$command" == "build" ]
 then
 for f in "$@"
 do
-    if [ "$f" != "$1" ] && [ "$f" != "$2" ] && [[ $f == *.js ]]
+    if [ "$f" != "$1" ] && [ "$f" != "$2" ] && [[ $f == *.du ]] && [[  $f != *"#"*  ]]
     then
+       # echo $f
         files=$files$f' '
     fi
 done
@@ -60,12 +61,17 @@ fi
 
 
 for f in $files ; do
-    list=$list'--js '$f' '
-    if test $f -nt $output
+    # skip commented lines
+    if [[  $f != "#"*  ]]
     then
-    echo $f' is newer then '$output
-    stale=true
+        list=$list'--js '$f' '
+        if test $f -nt $output
+        then
+        echo $f' is newer then '$output
+        stale=true
+        fi
     fi
+
 done
 
 #echo -e $files
@@ -82,5 +88,5 @@ else
 echo "No new files to compile."
 fi
 
-fi
 
+fi
